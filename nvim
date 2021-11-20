@@ -1,0 +1,44 @@
+" General
+set number
+set number relativenumber
+syntax enable
+set textwidth=100
+set showmatch
+set encoding=UTF-8
+
+" Search
+set hlsearch
+set smartcase
+set ignorecase
+set incsearch
+
+" Misc
+set undolevels=1000
+set backspace=indent,eol,start
+
+" Keymapping
+" Ctrl + c copy to clipboard all file content or selected text through     visual mode
+vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
+" map <C-y> :w !xclip -sel c <CR><CR>
+map <C-p> <Nop>
+" Break line over cursor
+map <C-j> i<ENTER><Esc>
+
+" Scripts
+" Autoremove trilling spaces on save
+autocmd BufWritePre * %s/\s\+$//e
+" https://gist.github.com/nervetattoo/3652878
+" Console log from insert mode; Puts focus inside parentheses
+imap gll console.log();<Esc>==f(a
+" Console log from visual mode on next line, puts visual selection inside parentheses
+vmap gll yocll<Esc>p
+" Console log from normal mode, inserted on next line with word your on inside parentheses
+nmap gll yiwocll<Esc>p
+
+" Spacing
+set shiftwidth=4
+set softtabstop=2
+
+call plug#begin('~/.config/nvim/autload/plugged')
+    Plug 'chrisbra/colorizer'
+call plug#end()

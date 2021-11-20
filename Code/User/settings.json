@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "Tokyo City Darker",
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "editor.tabSize": 2,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "'UbuntuMono Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback','Noto Color Emoji'",
+    "editor.lineNumbers": "relative",
+    "vim.vimrc.path": "$HOME/.config/nvim/init.vim",
+    "vim.vimrc.enable": true,
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-f>": false,
+        "<C-b>": false
+    },
+    "window.zoomLevel": 0,
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "files.associations": {
+        "*.ts": "typescript"
+    },
+    "editor.suggestSelection": "first",
+    "editor.snippetSuggestions": "top",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideActivityBar": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": true,
+    "vim.statusBarColorControl": false
+}
